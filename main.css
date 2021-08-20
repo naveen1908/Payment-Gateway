@@ -1,0 +1,553 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+ .nav-bg{
+    background: rgba(1, 13, 54, 0.6);
+}
+
+.navbar-nav .nav-link{
+    color: rgb(255, 255, 255)!important;
+} 
+
+.navbar-toggler{
+    outline: none!important;
+}
+/*---Start Hero---*/
+#hero{
+    width:100%;
+    height: 100vh;
+    overflow:hidden;
+    position: relative;
+}
+#hero:after{
+    content:'';
+    position:absolute;
+    left:50%;
+    top:0;
+    width:130%;
+    height:89%;
+    background:linear-gradient(to right,rgba(42, 96, 158, 0.6),rgba(1, 35, 54, 0.4)),url("/image/hero02.jpg")center top no-repeat;
+    z-index:0;
+    border-radius: 0 0 50% 50%;
+    transform:translateX(-50%) rotate(0deg);
+}
+#hero:before{
+    content:'';
+    position: absolute;
+    left:50%;
+    top:0;
+    width:130%;
+    height:91%;
+    background:rgba(42,96,158,0.9);
+    opacity:0.3;
+    z-index:0;
+    border-radius:0 0 50% 50%;
+    transform: translateX(-50%)translateY(18px)rotate(0deg);
+}
+#hero .carousel-container{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    bottom:0;
+    top:0;
+    left:0;
+    right:0;
+}
+#hero h2{
+    color:#fff;
+    margin-bottom:30px;
+    font-size:48px;
+    font-weight:bold;
+}
+#hero p{
+    width:80%;
+    animation-delay:0.4s;
+    margin:0 auto 30px auto;
+    color:#fff;
+}
+#hero .carousel-control-prev, 
+#hero .carousel-control-next{
+    width:10%;
+}
+#hero .carousel-control-next-icon,
+#hero .carousel-control-prev-icon{
+    background:none;
+    font-size:48px;
+    line-height:1;
+    width:auto;
+    height: auto;
+}
+#hero .hero-btn{
+    font-weight:bold;
+    font-size:16px;
+    letter-spacing:1px;
+    display:inline-block;
+    padding:12px 32px;
+    border-radius:50px;
+    transition:0.5s;
+    line-height:1;
+    margin:10px;
+    color:#fff;
+    animation-delay:0.5s;
+    border:2px solid #34668f;
+}
+#hero .hero-btn:hover{
+    background:#033a6e;
+    color:#fff;
+    text-decoration:none;
+}
+@media(min-width:1024px){
+    #hero p{
+        width:60%;
+    }
+    #hero .carousel-control-prev,
+    #hero .carousel-control-next{
+        width:5%;
+    }
+}
+@media(max-width:768px){
+    #hero h2{
+        font-size:28px;
+    }
+    #hero:after{
+        width:180%;
+        height:95%;
+        border-radius: 50% 50% 0 0;
+        transform:translateX(-50%)rotate(0deg);
+    }
+    #hero:before{
+        top:0;
+        width:180%;
+        height:94%;
+        border-radius: 0 0  50% 50%;
+        transform: translateX(-50%)translateY(20px)rotate(4deg);
+    }
+}
+@media(max-width:575px){
+    #hero:after{
+        left:40%;
+        top:0;
+        width:200%;
+        height:95%;
+        border-radius: 0 0 50% 50%;
+        transform: translateX(-50%)rotate(0deg);
+    }
+    #hero:before{
+        left:50%;
+        top:0;
+        width:200%;
+        height:94%;
+        border-radius: 0 0 50% 50%;
+        transform: translateX(-50%)translateY(20px)rotate(4deg);
+
+    }
+}
+/*--End of Hero---*/
+
+/* About section*/
+  
+.about {
+    padding: 10px 0 0 0;
+  }
+  
+  .about .icon-boxes h3 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #080808;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .about .icon-boxes p{
+      text-align: justify;
+  }
+  
+  .about .icon-box {
+    margin-top: 40px;
+  }
+  
+  .about .icon-box .icon {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border: 2px solid #033a6e;
+    border-radius: 50px;
+    transition: 0.5s;
+  }
+  
+  .about .icon-box .icon i {
+    color: #033a6e;
+    font-size: 32px;
+  }
+  
+  .about .icon-box:hover .icon {
+    background: #033a6e;
+    border-color: #033a6e
+  }
+  
+  .about .icon-box:hover .icon i {
+    color: #fff;
+  }
+  
+  .about .icon-box .title {
+    margin-left: 85px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .about .icon-box .title a {
+    color: #343a40;
+    transition: 0.3s;
+  }
+  
+  .about .icon-box .title a:hover {
+    color: #033a6e;
+  }
+  
+  .about .icon-box .description {
+    margin-left: 85px;
+    line-height: 24px;
+    font-size: 14px;
+  }
+
+
+.about-section .container{
+    max-width: 1200px;
+}
+  
+    /* end of About Section*/
+/*========Stories========*/
+.story-box{
+    padding:55px;
+    background: rgba(42, 96, 158, 0.4);
+    margin-bottom:30px;
+    position:relative;
+    border-radius: 20px;
+    
+}
+.story-box h2{
+    font-size:24px;
+    font-weight:bold;
+    color: antiquewhite;
+    mix-blend-mode: difference;
+}
+.story-box p{
+    font-size: 16px;
+    font-weight:light;
+    color: darkgray;
+    mix-blend-mode: difference;
+}
+
+.overlay{
+    margin:40px 25px;
+    border:none;
+    padding:20px 44px;
+    font-size:20px;
+    position:relative;
+    display:inline-block;
+    text-align: center;
+    
+}
+
+.overlay:hover{
+    background: rgba(67, 125, 192, 0.616);
+    border-radius:20px;
+}
+/*========End of the Stories========*/
+
+
+/* Project Section Start  */
+.container1{
+    width: 1140px;
+    margin: auto;
+}
+
+.section-title-1{
+    width: 300px;
+    border-bottom: 3px solid var(--theme);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0 auto 50px;
+    position: relative;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+section{
+    padding: 100px 0;
+    position: relative;
+} 
+
+
+
+.programs{
+    background-color: rgba(42, 96, 158, 0.6);
+}
+
+.programs .conatiner1 p{
+    padding: 0 63px;
+    text-align: justify;
+}
+
+.programs .box-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 50px;
+    margin: 0px 60px;
+}
+
+.programs .box-container .box{
+    background-color: white;
+    text-align: center;
+    padding-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 #c5c5c5;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.programs .box-container .box .card-image{
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+ 
+.programs .box-container .box .card-image::after{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    filter: grayscale(70%);
+    transition: 0.4s;
+}
+
+.programs .box-container .box:nth-child(1) .card-image ,
+.programs .box-container .box:nth-child(1) .card-image::after{
+    background-image: url("/image/child3.jpg");
+} 
+
+.programs .box-container .box:nth-child(2) .card-image ,
+.programs .box-container .box:nth-child(2) .card-image::after{
+    background-image: url("/image/women.jpg");
+} 
+
+.programs .box-container .box:nth-child(3) .card-image ,
+.programs .box-container .box:nth-child(3) .card-image::after{
+    background-image: url("/image/hunger.jpg");
+} 
+
+.programs .box-container .box:nth-child(4) .card-image ,
+.programs .box-container .box:nth-child(4) .card-image::after{
+    background-image: url("/image/cloth.jpg");
+} 
+
+.programs .box-container .box:hover .card-image::after{
+    top: 100%;
+}
+
+.programs .box-container .box .program-title{
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #444;
+}
+
+.programs .box-container .box .donation-count{
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+    margin-top: 10px;
+}
+
+.programs .box-container .box .donation-count span{
+    color: var(--theme);
+}
+
+.btn1{
+    position: absolute;
+    left: 50%;
+    background-color: #033a6e;
+    color: white;
+    transform: translate(-50%);
+    bottom: -15px;
+    border-radius: 60px;
+    padding: 7px 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+/* Project Section Ends  */
+
+
+/*====Team Section======*/
+.team{
+    background: #fff;
+    padding:60px 0 30px 0;
+}
+
+.team .team-1{
+    text-align:center;
+    margin-bottom:80px;
+    position:relative;
+}
+.team .team-1 .pic{
+    border-radius:4px;
+    overflow:hidden;
+}
+.team .team-1 img{
+    transition:all ease-in-out 0.4s;
+}
+.team .team-1:hover img{
+    transform:scale(1.1);
+}
+.team .team-1 .team-info{
+    position: absolute;
+    bottom:-48px;
+    left:20px;
+    right:20px;
+    background: linear-gradient(360deg,#033a6e 0%,rgba(148, 195, 233, 0.9)35%,
+    rgba(0, 35, 59, 0.8)100%);
+    padding: 15px 0;
+    border-radius: 10px;
+}
+.team .team-1 h4{
+    font-weight: bold;
+    margin-bottom:10px;
+    font-size:16px;
+    color:#fff;
+    position: relative;
+    padding-bottom: 10px;
+}
+.team .team-1 h4:after{
+    content:"";
+    position: absolute;
+    display:block;
+    width:50px;
+    height:1px;
+    background: #010235;
+    bottom:0;
+    left: calc(50% - 25px);
+}
+.team .team-1 span{
+    font-style:italic;
+    display:block;
+    font-size: 13px;
+    color:#fff;
+}
+.team .team-1 .social{
+    margin-top: 15px;
+}
+.team .team-1 .social a{
+    transition: color 0.3s;
+    color:#01290d;
+}
+.team .team-1 .social a:hover{
+    color:#fff;
+}
+.team .team-1 .social i{
+    font-size:16px;
+    margin: 0 2px;
+}
+@media (max-width: 992px){
+    .team .team-1{
+        margin-bottom: 100px;
+    }
+}
+/*====end of Team Section======*/
+
+/*Donation*/
+
+.donation-btn{
+    margin-top: 30px;
+    padding: 0 32px 32px;
+}
+.btn-don{
+    background: #082970;
+    color: #fff;
+    border-radius: 50px;
+}
+.btn-don:hover{
+    color: white;
+    border: 2px solid #082970;
+    font-size: 20px;
+}
+
+.donate{
+    padding: 0 0;
+    background-color: rgba(42, 96, 158, 0.6);
+}
+/*==========End of the Donation Section======*/
+
+
+/* Contact */
+.contact{
+    padding: 0;
+    padding-bottom: 30px;
+}
+.contact .info {
+    padding: 20px 40px;
+    background: rgba(42, 96, 158, 0.6);
+    color: #131313;
+    text-align: center;
+    border: 1px solid #fff;
+  }
+  
+  .contact .info i {
+    font-size: 30px;
+    color: #082970;
+    margin-bottom: 15px;
+  }
+  
+  .contact .info h4 {
+    padding: 0;
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .contact .info p {
+    font-size: 15px;
+  }
+  .rounded-cor{
+    border-radius: 50px;
+    background: #082970;
+    color: #fff;
+  }
+
+  .rounded-cor:hover{
+    color: white;
+    border: 2px solid #082970;
+    font-size: 20px;
+}
+
+/* end contact */
+.footer{
+    background:linear-gradient(rgba(88, 149, 219, 0.6),rgba(0, 16, 59, 0.4));
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
