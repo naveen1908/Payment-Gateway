@@ -33,7 +33,7 @@ body{
     top:0;
     width:130%;
     height:89%;
-    background:linear-gradient(to right,rgba(42, 96, 158, 0.6),rgba(1, 35, 54, 0.4)),url("/image/hero02.jpg")center top no-repeat;
+    background:linear-gradient(to right,rgba(42, 96, 158, 0.6),rgba(1, 35, 54, 0.4)),url("image/hero02.jpg")center top no-repeat;
     z-index:0;
     border-radius: 0 0 50% 50%;
     transform:translateX(-50%) rotate(0deg);
@@ -345,22 +345,22 @@ section{
 
 .programs .box-container .box:nth-child(1) .card-image ,
 .programs .box-container .box:nth-child(1) .card-image::after{
-    background-image: url("/image/child3.jpg");
+    background-image: url("image/child3.jpg");
 } 
 
 .programs .box-container .box:nth-child(2) .card-image ,
 .programs .box-container .box:nth-child(2) .card-image::after{
-    background-image: url("/image/women.jpg");
+    background-image: url("image/women.jpg");
 } 
 
 .programs .box-container .box:nth-child(3) .card-image ,
 .programs .box-container .box:nth-child(3) .card-image::after{
-    background-image: url("/image/hunger.jpg");
+    background-image: url("image/hunger.jpg");
 } 
 
 .programs .box-container .box:nth-child(4) .card-image ,
 .programs .box-container .box:nth-child(4) .card-image::after{
-    background-image: url("/image/cloth.jpg");
+    background-image: url("image/cloth.jpg");
 } 
 
 .programs .box-container .box:hover .card-image::after{
